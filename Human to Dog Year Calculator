@@ -1,0 +1,10 @@
+//Not sure if this is how this website works AT ALL.
+//the first two years of a dog's life are equal to 10.5 years each. every year thereafter is worth 4 dog years per human year
+const myAge = 28;
+let earlyYears = 2;
+earlyYears *= 10.5;
+let laterYears = myAge - 2;
+laterYears *= 4;
+let myAgeInDogYears = earlyYears + laterYears;
+let myName = 'Candy'.toLowerCase();
+console.log(`My name is ${myName}. I am ${myAge} years old which is ${myAgeInDogYears} years old in dog years.`)
