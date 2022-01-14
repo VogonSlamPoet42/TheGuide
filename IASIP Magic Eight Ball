@@ -1,0 +1,44 @@
+//Magic Eight Ball Program - It's Always Sunny in Philadelphia Edition
+
+let userName = 'Candy';
+userName ? console.log(`Hello ${userName}!`)
+: console.log('Hello!');
+
+let userQuestion = 'Am I a golden god?'
+userQuestion ? console.log(`You have asked "${userQuestion}"`)
+: console.log('What is your question?');
+
+let randomNumber = Math.floor(Math.random() * 8);
+
+let eightBall = '';
+
+switch (randomNumber) {
+  case 0:
+  eightBall = 'Hell no!';
+  break;
+  case 1:
+  eightBall = 'I don\'t give a shit';
+  break;
+  case 2:
+  eightBall = 'We\'ll see...';
+  break;
+  case 3:
+  eightBall = 'You have to pay the troll toll...';
+  break;
+  case 4:
+  eightBall = 'I\'m eating because I\'m very uncomfortable';
+  break;
+  case 5:
+  eightBall = 'Science is a liar sometimes';
+  break;
+  case 6:
+  eightBall = 'That is about as low brow as it gets';
+  break;
+  case 7:
+  eightBall = 'Well, first of all, through god, all things are possible, so jot that down';
+  break;
+  case 8:
+  eightBall = 'Wildcard bitches! YeeeeeeeeeeHAW!';
+  break;
+}
+console.log(`Your answer is: ${eightBall}`)
